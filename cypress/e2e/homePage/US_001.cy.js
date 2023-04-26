@@ -4,15 +4,13 @@ import HomePage from '../../support/pageObjectmodel/HomePage'
 describe('My First Test Suite', ()=> 
 {
 
-it('My FirstTest case',() =>{
+it('TC001',() =>{
 
 const homepage=new HomePage()
 
 cy.visit(Cypress.env('url'))
 
-homepage.getClickLoginButton().click()
-
-
+cy.url().should('equal','https://test.urbanicfarm.com/')
 
 })
 })
