@@ -1,8 +1,11 @@
+
 class HomePage {
   logo() {
     return cy.get('.Navbar_textLink__f6_Al.cursor-pointer');
   }
-
+  getClickLoginButton(){
+    return  cy.get('//a[contains(text(),"Login")]')
+    }
   supportLocalFood() {
     return cy.get('.text-white');
   }
@@ -34,3 +37,4 @@ class HomePage {
   }
 }
 export default HomePage;
+
