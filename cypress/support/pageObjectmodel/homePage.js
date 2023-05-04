@@ -39,6 +39,9 @@ class HomePage {
   aboutUs(){
    return  cy.get(':nth-child(3) > .Footer_listCon__29kxp > :nth-child(1) > a');
   }
+  getFreshProduce(){
+    return cy.get(':nth-child(1) > .section-2_shopButton__17T04');
+  }
 
 }
 export default HomePage;
