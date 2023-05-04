@@ -42,6 +42,9 @@ class HomePage {
   getFreshProduce(){
     return cy.get(':nth-child(1) > .section-2_shopButton__17T04');
   }
+  bakwardRegistButton(){
+    return cy.get('.Section11_shopButton__WbZY9');
+  }
 
 }
 export default HomePage;
