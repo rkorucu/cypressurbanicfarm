@@ -35,6 +35,10 @@ class HomePage {
   register() {
     return cy.get('.mr-2');
   }
+
+  aboutUs(){
+   return  cy.get(':nth-child(3) > .Footer_listCon__29kxp > :nth-child(1) > a');
+  }
 }
 export default HomePage;
 
