@@ -45,6 +45,12 @@ class HomePage {
   bakwardRegistButton(){
     return cy.get('.Section11_shopButton__WbZY9');
   }
+  registerNowButton(){
+    return cy.get('.section-5_btn__2qFR0 > button')
+  }
+  goFunderButton(){
+    return cy.get('button[class="section-9_gofunderButton__32gaj"]');
+  }
 
 }
 export default HomePage;
