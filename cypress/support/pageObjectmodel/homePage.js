@@ -35,6 +35,23 @@ class HomePage {
   register() {
     return cy.get('.mr-2');
   }
+
+  aboutUs(){
+   return  cy.get(':nth-child(3) > .Footer_listCon__29kxp > :nth-child(1) > a');
+  }
+  getFreshProduce(){
+    return cy.get(':nth-child(1) > .section-2_shopButton__17T04');
+  }
+  bakwardRegistButton(){
+    return cy.get('.Section11_shopButton__WbZY9');
+  }
+  registerNowButton(){
+    return cy.get('.section-5_btn__2qFR0 > button')
+  }
+  goFunderButton(){
+    return cy.get('button[class="section-9_gofunderButton__32gaj"]');
+  }
+
 }
 export default HomePage;
 
