@@ -66,6 +66,16 @@ class HomePage {
   goFunderButton(){
     return cy.get('button[class="section-9_gofunderButton__32gaj"]');
   }
+  discoverLocalSeller(){
+    return cy.get(':nth-child(1) > .Footer_listCon__29kxp > :nth-child(1) > a');
+  }
+
+  sellTradePageButton(){
+    return cy.get(':nth-child(2) > .Footer_listCon__29kxp > li > a');
+}
+contact(){
+  return cy.get(':nth-child(3) > .Footer_listCon__29kxp > :nth-child(2) > a')
+}
 
 }
 
