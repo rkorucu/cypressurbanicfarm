@@ -76,7 +76,9 @@ class HomePage {
 contact(){
   return cy.get(':nth-child(3) > .Footer_listCon__29kxp > :nth-child(2) > a')
 }
-
+ termsService(){
+  return cy.get('.Footer_listCon__29kxp > :nth-child(4) > a');
+ }
 }
 
 export default HomePage;
